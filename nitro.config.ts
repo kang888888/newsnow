@@ -21,6 +21,10 @@ const nitroOption: Parameters<typeof viteNitro>[0] = {
     dirs: ["server/utils", "shared"],
   },
   preset: "node-server",
+  devServer: {
+    port: 4444,
+    host: "localhost",
+  },
   alias: {
     "@shared": join(projectDir, "shared"),
     "#": join(projectDir, "server"),
