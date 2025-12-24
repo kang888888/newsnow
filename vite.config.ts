@@ -18,6 +18,8 @@ export default defineConfig({
     alias: {
       "~": join(projectDir, "src"),
       "@shared": join(projectDir, "shared"),
+      // 确保 nitro-go 使用正确的 h3 版本
+      "h3": join(projectDir, "node_modules/h3"),
     },
   },
   plugins: [
